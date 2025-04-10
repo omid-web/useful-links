@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pomodoro Timer</h1>
+        <h3><a href="AITK_lofi_tunes_to_listen_to_while_researching_an.wav" download>Download Lo-fi Music</a></h3>
+        <div id="timer-display" class="info">25:00</div>
+        <div class="adjust-timer">
+            <button id="minus-five">-5 min</button>
+            <button id="plus-five">+5 min</button>
+        </div>
+        <div class="slider-container">
+            <label for="volume-slider">Volume:</label>
+            <input type="range" id="volume-slider" min="0" max="100" value="50">
+            <span class="value-display" id="volume-value">50%</span>
+        </div>
+        <div class="controls">
+            <button id="toggle" class="start">Start <span id="sound-symbol">🔊</span></button>
+            <button id="reset">Reset</button>
+        </div>
+        <audio id="background-audio" src="AITK_lofi_tunes_to_listen_to_while_researching_an.wav" loop autoplay></audio>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
